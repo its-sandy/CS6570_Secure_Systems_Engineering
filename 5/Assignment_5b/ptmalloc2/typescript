@@ -1,0 +1,175 @@
+Script started on Sunday 20 October 2019 11:34:22 AM IST
+[1m[7m%[27m[1m[0m                                                                                                                                                     [0m[27m[24m[J[34m~/D/C/5/A/ptmalloc2 [K[?1h=[0m[27m[24m[J[34m~/D/C/5/A/ptmalloc2 [1m[31m❯[33m❯[32m❯[39m[0m [K[?2004h[0m[27m[24m[J[34m~/D/C/5/A/ptmalloc2 [1m[31m❯[33m❯[32m❯[39m[0m [Kscriptls    clearrm typescript[13D./quidditchteam[?1l>[?2004l[0m[27m[24m[J[34m~/D/C/5/A/ptmalloc2 [1m[31m❯[33m❯[32m❯[39m[0m ./quidditchteam[K
+-----------------------------------
+   Build your Hogwarts Quidditch team
+
+-----------------------------------
+Enter the name of your team
+Greats
+Greats
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+a
+Enter student name
+P1
+Enter house type
+(Enter 1 for Gryffindor, 2 for Ravenclaw, 3 Hufflepuff or 4 for Slytherin
+1
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+p
+1 P1 (Gryffindor) 0x2182830
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+a
+Enter student name
+P2
+Enter house type
+(Enter 1 for Gryffindor, 2 for Ravenclaw, 3 Hufflepuff or 4 for Slytherin
+2
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+p
+1 P1 (Gryffindor) 0x2182830
+2 P2 (Ravenclaw) 0x2182850
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+r
+Enter player number to remove : 1
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+p
+1 P2 (Ravenclaw) 0x2182850
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+r
+Enter player number to remove : 2
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+p
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+r
+Enter player number to remove : 1
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+p
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+a
+Enter student name
+pj`
+Enter house type
+(Enter 1 for Gryffindor, 2 for Ravenclaw, 3 Hufflepuff or 4 for Slytherin
+1
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+p
+1 pj` (Gryffindor) 0x2182830
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+a
+Enter student name
+P3
+Enter house type
+(Enter 1 for Gryffindor, 2 for Ravenclaw, 3 Hufflepuff or 4 for Slytherin
+2
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+p
+1 pj` (Gryffindor) 0x2182830
+2 P3 (Ravenclaw) 0x2182850
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+a
+Enter student name
+P4
+Enter house type
+(Enter 1 for Gryffindor, 2 for Ravenclaw, 3 Hufflepuff or 4 for Slytherin
+1
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+p
+1 P4 (Gryffindor) 0x2182830
+2 P3 (Ravenclaw) 0x2182850
+3 P4 (Gryffindor) 0x2182830
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+a
+Enter student name
+Harry
+Enter house type
+(Enter 1 for Gryffindor, 2 for Ravenclaw, 3 Hufflepuff or 4 for Slytherin
+3
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+p
+1 P4 (Gryffindor) 0x2182830
+2 P3 (Ravenclaw) 0x2182850
+3 P4 (Gryffindor) 0x2182830
+4 Harry (Hufflepuff) 0x606a80
+....................
+[a]dd a player
+[r]emove a player
+[p]rint team
+e[x]it program
+x
+That's all folks!
+My Secret Player is Harry
+[1m[7m%[27m[1m[0m                                                                                                                                                     [0m[27m[24m[J[34m~/D/C/5/A/ptmalloc2 [1m[31m❯[33m❯[32m❯[39m[0m [K[?1h=[0m[27m[24m[J[34m~/D/C/5/A/ptmalloc2 [1m[31m❯[33m❯[32m❯[39m[0m [K[?2004h[0m[27m[24m[J[34m~/D/C/5/A/ptmalloc2 [1m[31m❯[33m❯[32m❯[39m[0m [K[?2004l
+
+Script done on Sunday 20 October 2019 11:37:08 AM IST

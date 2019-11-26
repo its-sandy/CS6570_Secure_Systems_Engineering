@@ -1,0 +1,1834 @@
+Script started on Wednesday 02 October 2019 10:31:59 PM IST
+]0;surya@surya-HP-Pavilion-Power-Laptop-15-cb0xx:~/Desktop/CS6570/sse/challenges/ptmalloc2/home/surya/.zshrc:source:51: no such file or directory: /tools/setup.sh
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                   ]0;surya@surya-HP-Pavilion-Power-Laptop-15-cb0xx:~/Desktop/CS6570/sse/challenges/ptmalloc2[0m[27m[24m[J
+[38;5;135msurya[39m at [38;5;166msurya-HP-Pavilion-Power-Laptop-15-cb0xx[39m in [38;5;118m~/Desktop/CS6570/sse/challenges/ptmalloc2[39m ([38;5;81mmaster[38;5;166m●[38;5;161m●[39m[39m)
+$ [K[?1h=[?2004h[4mm[24m[4mm[4ma[24m[4mm[4ma[4mk[24m[24m[32mm[24m[32ma[24m[32mk[32me[39m [4mc[24m[24mclean[?1l>[?2004l
+rm -f malloc.o malloc-stats.o libmalloc.a malloc.so t-test1 t-test2 tst-mallocstate tst-mstats core core.[0-9]*
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                   ]0;surya@surya-HP-Pavilion-Power-Laptop-15-cb0xx:~/Desktop/CS6570/sse/challenges/ptmalloc2[0m[27m[24m[J
+[38;5;135msurya[39m at [38;5;166msurya-HP-Pavilion-Power-Laptop-15-cb0xx[39m in [38;5;118m~/Desktop/CS6570/sse/challenges/ptmalloc2[39m ([38;5;81mmaster[38;5;166m●[38;5;161m●[39m[39m)
+$ [K[?1h=[?2004h[4mm[24m[4mm[4ma[24m[4mm[4ma[4mk[24m[24m[32mm[24m[32ma[24m[32mk[32me[39m [4ma[24m[24ma5[?1l>[?2004l
+cc -c  -g -O   -DUSE_TSD_DATA_HACK -D_REENTRANT -Isysdeps/generic -DTHREAD_STATS=1  malloc.c
+In file included from [01m[Kmalloc.c:1485:0[m[K:
+[01m[Kmalloc.h:72:0:[m[K [01;35m[Kwarning: [m[K"__THROW" redefined
+ #  define __THROW
+[01;32m[K ^[m[K
+In file included from [01m[K/usr/include/features.h:367:0[m[K,
+                 from [01m[K/usr/include/stdlib.h:24[m[K,
+                 from [01m[Kmalloc.c:254[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/sys/cdefs.h:55:0:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+ #  define __THROW __attribute__ ((__nothrow__ __LEAF))
+[01;32m[K ^[m[K
+[01m[Kmalloc.c:[m[K In function ‘[01m[Kmremap_chunk[m[K’:
+[01m[Kmalloc.c:3307:16:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kmremap[m[K’ [-Wimplicit-function-declaration]
+   cp = (char *)mremap((char *)p - offset, size + offset, new_size,
+[01;32m[K                ^[m[K
+[01m[Kmalloc.c:3307:8:[m[K [01;35m[Kwarning: [m[Kcast to pointer from integer of different size [-Wint-to-pointer-cast]
+   cp = (char *)mremap((char *)p - offset, size + offset, new_size,
+[01;32m[K        ^[m[K
+[01m[Kmalloc.c:[m[K In function ‘[01m[K_int_realloc[m[K’:
+[01m[Kmalloc.c:4641:10:[m[K [01;35m[Kwarning: [m[Kcast to pointer from integer of different size [-Wint-to-pointer-cast]
+     cp = (char*)mremap((char*)oldp - offset, oldsize + offset, newsize, 1);
+[01;32m[K          ^[m[K
+cc -c  -g -O   -DUSE_TSD_DATA_HACK -D_REENTRANT -Isysdeps/generic -DTHREAD_STATS=1  malloc-stats.c
+In file included from [01m[Kmalloc-stats.c:27:0[m[K:
+[01m[Kmalloc.h:72:0:[m[K [01;35m[Kwarning: [m[K"__THROW" redefined
+ #  define __THROW
+[01;32m[K ^[m[K
+In file included from [01m[K/usr/include/features.h:367:0[m[K,
+                 from [01m[K/usr/include/stdio.h:27[m[K,
+                 from [01m[Kmalloc-stats.c:23[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/sys/cdefs.h:55:0:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+ #  define __THROW __attribute__ ((__nothrow__ __LEAF))
+[01;32m[K ^[m[K
+ar cr libmalloc.a malloc.o malloc-stats.o
+ranlib libmalloc.a
+cc  -g -O   -DUSE_TSD_DATA_HACK -D_REENTRANT -Isysdeps/generic -DUSE_MALLOC=1 -DTEST=1 t-test1.c libmalloc.a -lpthread -o t-test1
+In file included from [01m[Kt-test1.c:23:0[m[K:
+[01m[Kmalloc.h:72:0:[m[K [01;35m[Kwarning: [m[K"__THROW" redefined
+ #  define __THROW
+[01;32m[K ^[m[K
+In file included from [01m[K/usr/include/features.h:367:0[m[K,
+                 from [01m[K/usr/include/stdlib.h:24[m[K,
+                 from [01m[Kt-test1.c:9[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/sys/cdefs.h:55:0:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+ #  define __THROW __attribute__ ((__nothrow__ __LEAF))
+[01;32m[K ^[m[K
+In file included from [01m[Kt-test1.c:24:0[m[K:
+[01m[Kmalloc.c:[m[K In function ‘[01m[Kmremap_chunk[m[K’:
+[01m[Kmalloc.c:3307:16:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kmremap[m[K’ [-Wimplicit-function-declaration]
+   cp = (char *)mremap((char *)p - offset, size + offset, new_size,
+[01;32m[K                ^[m[K
+[01m[Kmalloc.c:3307:8:[m[K [01;35m[Kwarning: [m[Kcast to pointer from integer of different size [-Wint-to-pointer-cast]
+   cp = (char *)mremap((char *)p - offset, size + offset, new_size,
+[01;32m[K        ^[m[K
+[01m[Kmalloc.c:[m[K In function ‘[01m[K_int_realloc[m[K’:
+[01m[Kmalloc.c:4641:10:[m[K [01;35m[Kwarning: [m[Kcast to pointer from integer of different size [-Wint-to-pointer-cast]
+     cp = (char*)mremap((char*)oldp - offset, oldsize + offset, newsize, 1);
+[01;32m[K          ^[m[K
+[01m[Kt-test1.c:[m[K In function ‘[01m[Kmalloc_test[m[K’:
+[01m[Kt-test1.c:190:14:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 2 has type ‘[01m[Ksize_t {aka long unsigned int}[m[K’ [-Wformat=]
+       printf("%d ", fastavail);
+[01;32m[K              ^[m[K
+[01m[Kt-test1.c:215:14:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 2 has type ‘[01m[Ksize_t {aka long unsigned int}[m[K’ [-Wformat=]
+       printf("%d ", ubinavail);
+[01;32m[K              ^[m[K
+cc  -g -O   -DUSE_TSD_DATA_HACK -D_REENTRANT -Isysdeps/generic -DUSE_MALLOC=1 -DTEST=1 t-test2.c libmalloc.a -lpthread -o t-test2
+In file included from [01m[Kt-test2.c:21:0[m[K:
+[01m[Kmalloc.h:72:0:[m[K [01;35m[Kwarning: [m[K"__THROW" redefined
+ #  define __THROW
+[01;32m[K ^[m[K
+In file included from [01m[K/usr/include/features.h:367:0[m[K,
+                 from [01m[K/usr/include/stdlib.h:24[m[K,
+                 from [01m[Kt-test2.c:9[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/sys/cdefs.h:55:0:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+ #  define __THROW __attribute__ ((__nothrow__ __LEAF))
+[01;32m[K ^[m[K
+cc  -g -O   -DUSE_TSD_DATA_HACK -D_REENTRANT -Isysdeps/generic -DUSE_MALLOC=1 -DTEST=1 tst-mallocstate.c libmalloc.a \
+ -lpthread -o tst-mallocstate
+In file included from [01m[Ktst-mallocstate.c:22:0[m[K:
+[01m[Kmalloc.h:72:0:[m[K [01;35m[Kwarning: [m[K"__THROW" redefined
+ #  define __THROW
+[01;32m[K ^[m[K
+In file included from [01m[K/usr/include/features.h:367:0[m[K,
+                 from [01m[K/usr/include/errno.h:28[m[K,
+                 from [01m[Ktst-mallocstate.c:20[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/sys/cdefs.h:55:0:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+ #  define __THROW __attribute__ ((__nothrow__ __LEAF))
+[01;32m[K ^[m[K
+cc  -g -O   -DUSE_TSD_DATA_HACK -D_REENTRANT -Isysdeps/generic -DUSE_MALLOC=1 -DTEST=1 tst-mstats.c libmalloc.a \
+ -lpthread -o tst-mstats
+In file included from [01m[Ktst-mstats.c:22:0[m[K:
+[01m[Kmalloc.h:72:0:[m[K [01;35m[Kwarning: [m[K"__THROW" redefined
+ #  define __THROW
+[01;32m[K ^[m[K
+In file included from [01m[K/usr/include/features.h:367:0[m[K,
+                 from [01m[K/usr/include/errno.h:28[m[K,
+                 from [01m[Ktst-mstats.c:20[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/sys/cdefs.h:55:0:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+ #  define __THROW __attribute__ ((__nothrow__ __LEAF))
+[01;32m[K ^[m[K
+./t-test1 0 0 10000 64
+No threads.
+total=0 threads=1 i_max=10000 size=64 bins=125000
+
+===FAST BINS===
+Number of fast bins = 11
+Fast Bin 1
+nblocks = 0
+avail = 
+Fast Bin 2
+nblocks = 0
+avail = 
+Fast Bin 3
+nblocks = 77
+avail = 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 
+Fast Bin 4
+nblocks = 0
+avail = 
+Fast Bin 5
+nblocks = 24
+avail = 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 
+Fast Bin 6
+nblocks = 0
+avail = 
+Fast Bin 7
+nblocks = 18
+avail = 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 
+Fast Bin 8
+nblocks = 0
+avail = 
+Fast Bin 9
+nblocks = 27
+avail = 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 
+Fast Bin 10
+nblocks = 0
+avail = 
+Fast Bin 11
+nblocks = 0
+avail = 
+
+===UNSORTED BIN===
+Bin 1
+nblocks = 1
+avail = 96 
+
+===SMALL BINS===
+Bin 2
+nblocks = 0
+avail = 
+Bin 3
+nblocks = 0
+avail = 
+Bin 4
+nblocks = 0
+avail = 
+Bin 5
+nblocks = 0
+avail = 
+Bin 6
+nblocks = 0
+avail = 
+Bin 7
+nblocks = 0
+avail = 
+Bin 8
+nblocks = 0
+avail = 
+Bin 9
+nblocks = 0
+avail = 
+Bin 10
+nblocks = 0
+avail = 
+Bin 11
+nblocks = 0
+avail = 
+Bin 12
+nblocks = 0
+avail = 
+Bin 13
+nblocks = 0
+avail = 
+Bin 14
+nblocks = 0
+avail = 
+Bin 15
+nblocks = 0
+avail = 
+Bin 16
+nblocks = 0
+avail = 
+Bin 17
+nblocks = 0
+avail = 
+Bin 18
+nblocks = 0
+avail = 
+Bin 19
+nblocks = 0
+avail = 
+Bin 20
+nblocks = 0
+avail = 
+Bin 21
+nblocks = 0
+avail = 
+Bin 22
+nblocks = 0
+avail = 
+Bin 23
+nblocks = 0
+avail = 
+Bin 24
+nblocks = 0
+avail = 
+Bin 25
+nblocks = 0
+avail = 
+Bin 26
+nblocks = 0
+avail = 
+Bin 27
+nblocks = 0
+avail = 
+Bin 28
+nblocks = 0
+avail = 
+Bin 29
+nblocks = 0
+avail = 
+Bin 30
+nblocks = 0
+avail = 
+Bin 31
+nblocks = 0
+avail = 
+Bin 32
+nblocks = 0
+avail = 
+Bin 33
+nblocks = 0
+avail = 
+Bin 34
+nblocks = 0
+avail = 
+Bin 35
+nblocks = 0
+avail = 
+Bin 36
+nblocks = 0
+avail = 
+Bin 37
+nblocks = 0
+avail = 
+Bin 38
+nblocks = 0
+avail = 
+Bin 39
+nblocks = 0
+avail = 
+Bin 40
+nblocks = 0
+avail = 
+Bin 41
+nblocks = 0
+avail = 
+Bin 42
+nblocks = 0
+avail = 
+Bin 43
+nblocks = 0
+avail = 
+Bin 44
+nblocks = 0
+avail = 
+Bin 45
+nblocks = 0
+avail = 
+Bin 46
+nblocks = 0
+avail = 
+Bin 47
+nblocks = 0
+avail = 
+Bin 48
+nblocks = 0
+avail = 
+Bin 49
+nblocks = 0
+avail = 
+Bin 50
+nblocks = 0
+avail = 
+Bin 51
+nblocks = 0
+avail = 
+Bin 52
+nblocks = 0
+avail = 
+Bin 53
+nblocks = 0
+avail = 
+Bin 54
+nblocks = 0
+avail = 
+Bin 55
+nblocks = 0
+avail = 
+Bin 56
+nblocks = 0
+avail = 
+Bin 57
+nblocks = 0
+avail = 
+Bin 58
+nblocks = 0
+avail = 
+Bin 59
+nblocks = 0
+avail = 
+Bin 60
+nblocks = 0
+avail = 
+Bin 61
+nblocks = 0
+avail = 
+Bin 62
+nblocks = 0
+avail = 
+Bin 63
+nblocks = 0
+avail = 
+
+===LARGE BINS===
+Bin 64
+nblocks = 0
+avail = 
+Bin 65
+nblocks = 0
+avail = 
+Bin 66
+nblocks = 0
+avail = 
+Bin 67
+nblocks = 0
+avail = 
+Bin 68
+nblocks = 0
+avail = 
+Bin 69
+nblocks = 0
+avail = 
+Bin 70
+nblocks = 0
+avail = 
+Bin 71
+nblocks = 0
+avail = 
+Bin 72
+nblocks = 0
+avail = 
+Bin 73
+nblocks = 0
+avail = 
+Bin 74
+nblocks = 0
+avail = 
+Bin 75
+nblocks = 0
+avail = 
+Bin 76
+nblocks = 0
+avail = 
+Bin 77
+nblocks = 0
+avail = 
+Bin 78
+nblocks = 0
+avail = 
+Bin 79
+nblocks = 0
+avail = 
+Bin 80
+nblocks = 0
+avail = 
+Bin 81
+nblocks = 0
+avail = 
+Bin 82
+nblocks = 0
+avail = 
+Bin 83
+nblocks = 0
+avail = 
+Bin 84
+nblocks = 0
+avail = 
+Bin 85
+nblocks = 0
+avail = 
+Bin 86
+nblocks = 0
+avail = 
+Bin 87
+nblocks = 0
+avail = 
+Bin 88
+nblocks = 0
+avail = 
+Bin 89
+nblocks = 0
+avail = 
+Bin 90
+nblocks = 0
+avail = 
+Bin 91
+nblocks = 0
+avail = 
+Bin 92
+nblocks = 0
+avail = 
+Bin 93
+nblocks = 0
+avail = 
+Bin 94
+nblocks = 0
+avail = 
+Bin 95
+nblocks = 0
+avail = 
+Bin 96
+nblocks = 0
+avail = 
+Bin 97
+nblocks = 0
+avail = 
+Bin 98
+nblocks = 0
+avail = 
+Bin 99
+nblocks = 0
+avail = 
+Bin 100
+nblocks = 0
+avail = 
+Bin 101
+nblocks = 0
+avail = 
+Bin 102
+nblocks = 0
+avail = 
+Bin 103
+nblocks = 0
+avail = 
+Bin 104
+nblocks = 0
+avail = 
+Bin 105
+nblocks = 0
+avail = 
+Bin 106
+nblocks = 0
+avail = 
+Bin 107
+nblocks = 0
+avail = 
+Bin 108
+nblocks = 0
+avail = 
+Bin 109
+nblocks = 0
+avail = 
+Bin 110
+nblocks = 0
+avail = 
+Bin 111
+nblocks = 0
+avail = 
+Bin 112
+nblocks = 0
+avail = 
+Bin 113
+nblocks = 0
+avail = 
+Bin 114
+nblocks = 0
+avail = 
+Bin 115
+nblocks = 0
+avail = 
+Bin 116
+nblocks = 0
+avail = 
+Bin 117
+nblocks = 0
+avail = 
+Bin 118
+nblocks = 0
+avail = 
+Bin 119
+nblocks = 0
+avail = 
+Bin 120
+nblocks = 0
+avail = 
+Bin 121
+nblocks = 0
+avail = 
+Bin 122
+nblocks = 0
+avail = 
+Bin 123
+nblocks = 0
+avail = 
+Bin 124
+nblocks = 0
+avail = 
+Bin 125
+nblocks = 0
+avail = 
+Bin 126
+nblocks = 0
+avail = 
+Bin 127
+nblocks = 0
+avail = 
+
+Created thread 1.
+Done.
+=====================================
+./t-test1 0 0 10000 256
+No threads.
+total=0 threads=1 i_max=10000 size=256 bins=31250
+
+===FAST BINS===
+Number of fast bins = 11
+Fast Bin 1
+nblocks = 0
+avail = 
+Fast Bin 2
+nblocks = 0
+avail = 
+Fast Bin 3
+nblocks = 27
+avail = 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 
+Fast Bin 4
+nblocks = 0
+avail = 
+Fast Bin 5
+nblocks = 7
+avail = 48 48 48 48 48 48 48 
+Fast Bin 6
+nblocks = 0
+avail = 
+Fast Bin 7
+nblocks = 53
+avail = 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 
+Fast Bin 8
+nblocks = 0
+avail = 
+Fast Bin 9
+nblocks = 2
+avail = 80 80 
+Fast Bin 10
+nblocks = 0
+avail = 
+Fast Bin 11
+nblocks = 0
+avail = 
+
+===UNSORTED BIN===
+Bin 1
+nblocks = 2
+avail = 96 128 
+
+===SMALL BINS===
+Bin 2
+nblocks = 0
+avail = 
+Bin 3
+nblocks = 0
+avail = 
+Bin 4
+nblocks = 54
+avail = 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 
+Bin 5
+nblocks = 0
+avail = 
+Bin 6
+nblocks = 2
+avail = 48 48 
+Bin 7
+nblocks = 0
+avail = 
+Bin 8
+nblocks = 0
+avail = 
+Bin 9
+nblocks = 0
+avail = 
+Bin 10
+nblocks = 0
+avail = 
+Bin 11
+nblocks = 0
+avail = 
+Bin 12
+nblocks = 4
+avail = 96 96 96 96 
+Bin 13
+nblocks = 0
+avail = 
+Bin 14
+nblocks = 1
+avail = 112 
+Bin 15
+nblocks = 0
+avail = 
+Bin 16
+nblocks = 1
+avail = 128 
+Bin 17
+nblocks = 0
+avail = 
+Bin 18
+nblocks = 23
+avail = 144 144 144 144 144 144 144 144 144 144 144 144 144 144 144 144 144 144 144 144 144 144 144 
+Bin 19
+nblocks = 0
+avail = 
+Bin 20
+nblocks = 0
+avail = 
+Bin 21
+nblocks = 0
+avail = 
+Bin 22
+nblocks = 3
+avail = 176 176 176 
+Bin 23
+nblocks = 0
+avail = 
+Bin 24
+nblocks = 5
+avail = 192 192 192 192 192 
+Bin 25
+nblocks = 0
+avail = 
+Bin 26
+nblocks = 0
+avail = 
+Bin 27
+nblocks = 0
+avail = 
+Bin 28
+nblocks = 0
+avail = 
+Bin 29
+nblocks = 0
+avail = 
+Bin 30
+nblocks = 0
+avail = 
+Bin 31
+nblocks = 0
+avail = 
+Bin 32
+nblocks = 1
+avail = 256 
+Bin 33
+nblocks = 0
+avail = 
+Bin 34
+nblocks = 7
+avail = 272 272 272 272 272 272 272 
+Bin 35
+nblocks = 0
+avail = 
+Bin 36
+nblocks = 4
+avail = 288 288 288 288 
+Bin 37
+nblocks = 0
+avail = 
+Bin 38
+nblocks = 2
+avail = 304 304 
+Bin 39
+nblocks = 0
+avail = 
+Bin 40
+nblocks = 0
+avail = 
+Bin 41
+nblocks = 0
+avail = 
+Bin 42
+nblocks = 2
+avail = 336 336 
+Bin 43
+nblocks = 0
+avail = 
+Bin 44
+nblocks = 2
+avail = 352 352 
+Bin 45
+nblocks = 0
+avail = 
+Bin 46
+nblocks = 3
+avail = 368 368 368 
+Bin 47
+nblocks = 0
+avail = 
+Bin 48
+nblocks = 2
+avail = 384 384 
+Bin 49
+nblocks = 0
+avail = 
+Bin 50
+nblocks = 1
+avail = 400 
+Bin 51
+nblocks = 0
+avail = 
+Bin 52
+nblocks = 1
+avail = 416 
+Bin 53
+nblocks = 0
+avail = 
+Bin 54
+nblocks = 4
+avail = 432 432 432 432 
+Bin 55
+nblocks = 0
+avail = 
+Bin 56
+nblocks = 2
+avail = 448 448 
+Bin 57
+nblocks = 0
+avail = 
+Bin 58
+nblocks = 1
+avail = 464 
+Bin 59
+nblocks = 0
+avail = 
+Bin 60
+nblocks = 3
+avail = 480 480 480 
+Bin 61
+nblocks = 0
+avail = 
+Bin 62
+nblocks = 0
+avail = 
+Bin 63
+nblocks = 0
+avail = 
+
+===LARGE BINS===
+Bin 64
+nblocks = 2
+avail = 512 528 
+Bin 65
+nblocks = 2
+avail = 576 592 
+Bin 66
+nblocks = 0
+avail = 
+Bin 67
+nblocks = 1
+avail = 704 
+Bin 68
+nblocks = 0
+avail = 
+Bin 69
+nblocks = 0
+avail = 
+Bin 70
+nblocks = 0
+avail = 
+Bin 71
+nblocks = 0
+avail = 
+Bin 72
+nblocks = 0
+avail = 
+Bin 73
+nblocks = 0
+avail = 
+Bin 74
+nblocks = 0
+avail = 
+Bin 75
+nblocks = 0
+avail = 
+Bin 76
+nblocks = 0
+avail = 
+Bin 77
+nblocks = 0
+avail = 
+Bin 78
+nblocks = 0
+avail = 
+Bin 79
+nblocks = 0
+avail = 
+Bin 80
+nblocks = 0
+avail = 
+Bin 81
+nblocks = 0
+avail = 
+Bin 82
+nblocks = 0
+avail = 
+Bin 83
+nblocks = 0
+avail = 
+Bin 84
+nblocks = 0
+avail = 
+Bin 85
+nblocks = 0
+avail = 
+Bin 86
+nblocks = 0
+avail = 
+Bin 87
+nblocks = 0
+avail = 
+Bin 88
+nblocks = 0
+avail = 
+Bin 89
+nblocks = 0
+avail = 
+Bin 90
+nblocks = 0
+avail = 
+Bin 91
+nblocks = 0
+avail = 
+Bin 92
+nblocks = 0
+avail = 
+Bin 93
+nblocks = 0
+avail = 
+Bin 94
+nblocks = 0
+avail = 
+Bin 95
+nblocks = 0
+avail = 
+Bin 96
+nblocks = 0
+avail = 
+Bin 97
+nblocks = 0
+avail = 
+Bin 98
+nblocks = 0
+avail = 
+Bin 99
+nblocks = 0
+avail = 
+Bin 100
+nblocks = 0
+avail = 
+Bin 101
+nblocks = 0
+avail = 
+Bin 102
+nblocks = 0
+avail = 
+Bin 103
+nblocks = 0
+avail = 
+Bin 104
+nblocks = 0
+avail = 
+Bin 105
+nblocks = 0
+avail = 
+Bin 106
+nblocks = 0
+avail = 
+Bin 107
+nblocks = 0
+avail = 
+Bin 108
+nblocks = 0
+avail = 
+Bin 109
+nblocks = 0
+avail = 
+Bin 110
+nblocks = 0
+avail = 
+Bin 111
+nblocks = 0
+avail = 
+Bin 112
+nblocks = 0
+avail = 
+Bin 113
+nblocks = 0
+avail = 
+Bin 114
+nblocks = 0
+avail = 
+Bin 115
+nblocks = 0
+avail = 
+Bin 116
+nblocks = 0
+avail = 
+Bin 117
+nblocks = 0
+avail = 
+Bin 118
+nblocks = 0
+avail = 
+Bin 119
+nblocks = 0
+avail = 
+Bin 120
+nblocks = 0
+avail = 
+Bin 121
+nblocks = 0
+avail = 
+Bin 122
+nblocks = 0
+avail = 
+Bin 123
+nblocks = 0
+avail = 
+Bin 124
+nblocks = 0
+avail = 
+Bin 125
+nblocks = 0
+avail = 
+Bin 126
+nblocks = 0
+avail = 
+Bin 127
+nblocks = 0
+avail = 
+
+Created thread 1.
+Done.
+=====================================
+./t-test1 0 0 10000 512
+No threads.
+total=0 threads=1 i_max=10000 size=512 bins=15625
+
+===FAST BINS===
+Number of fast bins = 11
+Fast Bin 1
+nblocks = 0
+avail = 
+Fast Bin 2
+nblocks = 0
+avail = 
+Fast Bin 3
+nblocks = 1
+avail = 32 
+Fast Bin 4
+nblocks = 0
+avail = 
+Fast Bin 5
+nblocks = 1
+avail = 48 
+Fast Bin 6
+nblocks = 0
+avail = 
+Fast Bin 7
+nblocks = 1
+avail = 64 
+Fast Bin 8
+nblocks = 0
+avail = 
+Fast Bin 9
+nblocks = 0
+avail = 
+Fast Bin 10
+nblocks = 0
+avail = 
+Fast Bin 11
+nblocks = 0
+avail = 
+
+===UNSORTED BIN===
+Bin 1
+nblocks = 4
+avail = 96 368 368 208 
+
+===SMALL BINS===
+Bin 2
+nblocks = 0
+avail = 
+Bin 3
+nblocks = 0
+avail = 
+Bin 4
+nblocks = 107
+avail = 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 
+Bin 5
+nblocks = 0
+avail = 
+Bin 6
+nblocks = 58
+avail = 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 
+Bin 7
+nblocks = 0
+avail = 
+Bin 8
+nblocks = 49
+avail = 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 
+Bin 9
+nblocks = 0
+avail = 
+Bin 10
+nblocks = 20
+avail = 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 
+Bin 11
+nblocks = 0
+avail = 
+Bin 12
+nblocks = 23
+avail = 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 
+Bin 13
+nblocks = 0
+avail = 
+Bin 14
+nblocks = 12
+avail = 112 112 112 112 112 112 112 112 112 112 112 112 
+Bin 15
+nblocks = 0
+avail = 
+Bin 16
+nblocks = 10
+avail = 128 128 128 128 128 128 128 128 128 128 
+Bin 17
+nblocks = 0
+avail = 
+Bin 18
+nblocks = 2
+avail = 144 144 
+Bin 19
+nblocks = 0
+avail = 
+Bin 20
+nblocks = 4
+avail = 160 160 160 160 
+Bin 21
+nblocks = 0
+avail = 
+Bin 22
+nblocks = 2
+avail = 176 176 
+Bin 23
+nblocks = 0
+avail = 
+Bin 24
+nblocks = 0
+avail = 
+Bin 25
+nblocks = 0
+avail = 
+Bin 26
+nblocks = 1
+avail = 208 
+Bin 27
+nblocks = 0
+avail = 
+Bin 28
+nblocks = 2
+avail = 224 224 
+Bin 29
+nblocks = 0
+avail = 
+Bin 30
+nblocks = 2
+avail = 240 240 
+Bin 31
+nblocks = 0
+avail = 
+Bin 32
+nblocks = 2
+avail = 256 256 
+Bin 33
+nblocks = 0
+avail = 
+Bin 34
+nblocks = 2
+avail = 272 272 
+Bin 35
+nblocks = 0
+avail = 
+Bin 36
+nblocks = 1
+avail = 288 
+Bin 37
+nblocks = 0
+avail = 
+Bin 38
+nblocks = 1
+avail = 304 
+Bin 39
+nblocks = 0
+avail = 
+Bin 40
+nblocks = 0
+avail = 
+Bin 41
+nblocks = 0
+avail = 
+Bin 42
+nblocks = 0
+avail = 
+Bin 43
+nblocks = 0
+avail = 
+Bin 44
+nblocks = 0
+avail = 
+Bin 45
+nblocks = 0
+avail = 
+Bin 46
+nblocks = 7
+avail = 368 368 368 368 368 368 368 
+Bin 47
+nblocks = 0
+avail = 
+Bin 48
+nblocks = 1
+avail = 384 
+Bin 49
+nblocks = 0
+avail = 
+Bin 50
+nblocks = 1
+avail = 400 
+Bin 51
+nblocks = 0
+avail = 
+Bin 52
+nblocks = 5
+avail = 416 416 416 416 416 
+Bin 53
+nblocks = 0
+avail = 
+Bin 54
+nblocks = 9
+avail = 432 432 432 432 432 432 432 432 432 
+Bin 55
+nblocks = 0
+avail = 
+Bin 56
+nblocks = 1
+avail = 448 
+Bin 57
+nblocks = 0
+avail = 
+Bin 58
+nblocks = 4
+avail = 464 464 464 464 
+Bin 59
+nblocks = 0
+avail = 
+Bin 60
+nblocks = 8
+avail = 480 480 480 480 480 480 480 480 
+Bin 61
+nblocks = 0
+avail = 
+Bin 62
+nblocks = 2
+avail = 496 496 
+Bin 63
+nblocks = 0
+avail = 
+
+===LARGE BINS===
+Bin 64
+nblocks = 24
+avail = 512 512 512 512 512 512 512 512 512 512 512 512 528 528 528 528 528 528 528 528 528 528 528 544 
+Bin 65
+nblocks = 2
+avail = 576 624 
+Bin 66
+nblocks = 1
+avail = 656 
+Bin 67
+nblocks = 1
+avail = 704 
+Bin 68
+nblocks = 0
+avail = 
+Bin 69
+nblocks = 2
+avail = 864 880 
+Bin 70
+nblocks = 0
+avail = 
+Bin 71
+nblocks = 0
+avail = 
+Bin 72
+nblocks = 0
+avail = 
+Bin 73
+nblocks = 1
+avail = 1120 
+Bin 74
+nblocks = 0
+avail = 
+Bin 75
+nblocks = 1
+avail = 1232 
+Bin 76
+nblocks = 0
+avail = 
+Bin 77
+nblocks = 0
+avail = 
+Bin 78
+nblocks = 1
+avail = 1424 
+Bin 79
+nblocks = 0
+avail = 
+Bin 80
+nblocks = 0
+avail = 
+Bin 81
+nblocks = 0
+avail = 
+Bin 82
+nblocks = 0
+avail = 
+Bin 83
+nblocks = 0
+avail = 
+Bin 84
+nblocks = 0
+avail = 
+Bin 85
+nblocks = 0
+avail = 
+Bin 86
+nblocks = 0
+avail = 
+Bin 87
+nblocks = 0
+avail = 
+Bin 88
+nblocks = 0
+avail = 
+Bin 89
+nblocks = 0
+avail = 
+Bin 90
+nblocks = 0
+avail = 
+Bin 91
+nblocks = 0
+avail = 
+Bin 92
+nblocks = 0
+avail = 
+Bin 93
+nblocks = 0
+avail = 
+Bin 94
+nblocks = 0
+avail = 
+Bin 95
+nblocks = 0
+avail = 
+Bin 96
+nblocks = 0
+avail = 
+Bin 97
+nblocks = 0
+avail = 
+Bin 98
+nblocks = 0
+avail = 
+Bin 99
+nblocks = 0
+avail = 
+Bin 100
+nblocks = 0
+avail = 
+Bin 101
+nblocks = 0
+avail = 
+Bin 102
+nblocks = 0
+avail = 
+Bin 103
+nblocks = 0
+avail = 
+Bin 104
+nblocks = 0
+avail = 
+Bin 105
+nblocks = 0
+avail = 
+Bin 106
+nblocks = 0
+avail = 
+Bin 107
+nblocks = 0
+avail = 
+Bin 108
+nblocks = 0
+avail = 
+Bin 109
+nblocks = 0
+avail = 
+Bin 110
+nblocks = 0
+avail = 
+Bin 111
+nblocks = 0
+avail = 
+Bin 112
+nblocks = 0
+avail = 
+Bin 113
+nblocks = 0
+avail = 
+Bin 114
+nblocks = 0
+avail = 
+Bin 115
+nblocks = 0
+avail = 
+Bin 116
+nblocks = 0
+avail = 
+Bin 117
+nblocks = 0
+avail = 
+Bin 118
+nblocks = 0
+avail = 
+Bin 119
+nblocks = 0
+avail = 
+Bin 120
+nblocks = 0
+avail = 
+Bin 121
+nblocks = 0
+avail = 
+Bin 122
+nblocks = 0
+avail = 
+Bin 123
+nblocks = 0
+avail = 
+Bin 124
+nblocks = 0
+avail = 
+Bin 125
+nblocks = 0
+avail = 
+Bin 126
+nblocks = 0
+avail = 
+Bin 127
+nblocks = 0
+avail = 
+
+Created thread 1.
+Done.
+=====================================
+./t-test1 0 0 10000 4096	
+No threads.
+total=0 threads=1 i_max=10000 size=4096 bins=1953
+
+===FAST BINS===
+Number of fast bins = 11
+Fast Bin 1
+nblocks = 0
+avail = 
+Fast Bin 2
+nblocks = 0
+avail = 
+Fast Bin 3
+nblocks = 0
+avail = 
+Fast Bin 4
+nblocks = 0
+avail = 
+Fast Bin 5
+nblocks = 0
+avail = 
+Fast Bin 6
+nblocks = 0
+avail = 
+Fast Bin 7
+nblocks = 0
+avail = 
+Fast Bin 8
+nblocks = 0
+avail = 
+Fast Bin 9
+nblocks = 0
+avail = 
+Fast Bin 10
+nblocks = 0
+avail = 
+Fast Bin 11
+nblocks = 0
+avail = 
+
+===UNSORTED BIN===
+Bin 1
+nblocks = 3
+avail = 112 1104 3536 
+
+===SMALL BINS===
+Bin 2
+nblocks = 0
+avail = 
+Bin 3
+nblocks = 0
+avail = 
+Bin 4
+nblocks = 35
+avail = 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 
+Bin 5
+nblocks = 0
+avail = 
+Bin 6
+nblocks = 22
+avail = 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 
+Bin 7
+nblocks = 0
+avail = 
+Bin 8
+nblocks = 27
+avail = 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 64 
+Bin 9
+nblocks = 0
+avail = 
+Bin 10
+nblocks = 21
+avail = 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 80 
+Bin 11
+nblocks = 0
+avail = 
+Bin 12
+nblocks = 17
+avail = 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 96 
+Bin 13
+nblocks = 0
+avail = 
+Bin 14
+nblocks = 9
+avail = 112 112 112 112 112 112 112 112 112 
+Bin 15
+nblocks = 0
+avail = 
+Bin 16
+nblocks = 11
+avail = 128 128 128 128 128 128 128 128 128 128 128 
+Bin 17
+nblocks = 0
+avail = 
+Bin 18
+nblocks = 11
+avail = 144 144 144 144 144 144 144 144 144 144 144 
+Bin 19
+nblocks = 0
+avail = 
+Bin 20
+nblocks = 11
+avail = 160 160 160 160 160 160 160 160 160 160 160 
+Bin 21
+nblocks = 0
+avail = 
+Bin 22
+nblocks = 9
+avail = 176 176 176 176 176 176 176 176 176 
+Bin 23
+nblocks = 0
+avail = 
+Bin 24
+nblocks = 12
+avail = 192 192 192 192 192 192 192 192 192 192 192 192 
+Bin 25
+nblocks = 0
+avail = 
+Bin 26
+nblocks = 3
+avail = 208 208 208 
+Bin 27
+nblocks = 0
+avail = 
+Bin 28
+nblocks = 5
+avail = 224 224 224 224 224 
+Bin 29
+nblocks = 0
+avail = 
+Bin 30
+nblocks = 3
+avail = 240 240 240 
+Bin 31
+nblocks = 0
+avail = 
+Bin 32
+nblocks = 1
+avail = 256 
+Bin 33
+nblocks = 0
+avail = 
+Bin 34
+nblocks = 2
+avail = 272 272 
+Bin 35
+nblocks = 0
+avail = 
+Bin 36
+nblocks = 1
+avail = 288 
+Bin 37
+nblocks = 0
+avail = 
+Bin 38
+nblocks = 2
+avail = 304 304 
+Bin 39
+nblocks = 0
+avail = 
+Bin 40
+nblocks = 2
+avail = 320 320 
+Bin 41
+nblocks = 0
+avail = 
+Bin 42
+nblocks = 3
+avail = 336 336 336 
+Bin 43
+nblocks = 0
+avail = 
+Bin 44
+nblocks = 5
+avail = 352 352 352 352 352 
+Bin 45
+nblocks = 0
+avail = 
+Bin 46
+nblocks = 0
+avail = 
+Bin 47
+nblocks = 0
+avail = 
+Bin 48
+nblocks = 3
+avail = 384 384 384 
+Bin 49
+nblocks = 0
+avail = 
+Bin 50
+nblocks = 3
+avail = 400 400 400 
+Bin 51
+nblocks = 0
+avail = 
+Bin 52
+nblocks = 1
+avail = 416 
+Bin 53
+nblocks = 0
+avail = 
+Bin 54
+nblocks = 2
+avail = 432 432 
+Bin 55
+nblocks = 0
+avail = 
+Bin 56
+nblocks = 1
+avail = 448 
+Bin 57
+nblocks = 0
+avail = 
+Bin 58
+nblocks = 1
+avail = 464 
+Bin 59
+nblocks = 0
+avail = 
+Bin 60
+nblocks = 1
+avail = 480 
+Bin 61
+nblocks = 0
+avail = 
+Bin 62
+nblocks = 2
+avail = 496 496 
+Bin 63
+nblocks = 0
+avail = 
+
+===LARGE BINS===
+Bin 64
+nblocks = 9
+avail = 512 512 528 544 544 544 544 544 544 
+Bin 65
+nblocks = 13
+avail = 576 576 576 576 592 592 592 608 624 624 624 624 624 
+Bin 66
+nblocks = 9
+avail = 640 640 640 640 640 656 672 688 688 
+Bin 67
+nblocks = 3
+avail = 720 720 736 
+Bin 68
+nblocks = 4
+avail = 768 768 784 784 
+Bin 69
+nblocks = 5
+avail = 832 832 832 832 864 
+Bin 70
+nblocks = 0
+avail = 
+Bin 71
+nblocks = 1
+avail = 1008 
+Bin 72
+nblocks = 1
+avail = 1056 
+Bin 73
+nblocks = 1
+avail = 1088 
+Bin 74
+nblocks = 1
+avail = 1152 
+Bin 75
+nblocks = 0
+avail = 
+Bin 76
+nblocks = 0
+avail = 
+Bin 77
+nblocks = 1
+avail = 1392 
+Bin 78
+nblocks = 1
+avail = 1408 
+Bin 79
+nblocks = 0
+avail = 
+Bin 80
+nblocks = 0
+avail = 
+Bin 81
+nblocks = 0
+avail = 
+Bin 82
+nblocks = 0
+avail = 
+Bin 83
+nblocks = 0
+avail = 
+Bin 84
+nblocks = 0
+avail = 
+Bin 85
+nblocks = 0
+avail = 
+Bin 86
+nblocks = 0
+avail = 
+Bin 87
+nblocks = 0
+avail = 
+Bin 88
+nblocks = 0
+avail = 
+Bin 89
+nblocks = 0
+avail = 
+Bin 90
+nblocks = 0
+avail = 
+Bin 91
+nblocks = 0
+avail = 
+Bin 92
+nblocks = 0
+avail = 
+Bin 93
+nblocks = 0
+avail = 
+Bin 94
+nblocks = 0
+avail = 
+Bin 95
+nblocks = 0
+avail = 
+Bin 96
+nblocks = 1
+avail = 2752 
+Bin 97
+nblocks = 1
+avail = 3200 
+Bin 98
+nblocks = 0
+avail = 
+Bin 99
+nblocks = 5
+avail = 4240 4368 4416 4448 4480 
+Bin 100
+nblocks = 2
+avail = 4912 4912 
+Bin 101
+nblocks = 3
+avail = 5152 5312 5440 
+Bin 102
+nblocks = 2
+avail = 5840 5984 
+Bin 103
+nblocks = 1
+avail = 6496 
+Bin 104
+nblocks = 3
+avail = 6992 7024 7056 
+Bin 105
+nblocks = 0
+avail = 
+Bin 106
+nblocks = 1
+avail = 7792 
+Bin 107
+nblocks = 1
+avail = 8512 
+Bin 108
+nblocks = 1
+avail = 9104 
+Bin 109
+nblocks = 0
+avail = 
+Bin 110
+nblocks = 0
+avail = 
+Bin 111
+nblocks = 0
+avail = 
+Bin 112
+nblocks = 1
+avail = 11920 
+Bin 113
+nblocks = 1
+avail = 15376 
+Bin 114
+nblocks = 0
+avail = 
+Bin 115
+nblocks = 0
+avail = 
+Bin 116
+nblocks = 0
+avail = 
+Bin 117
+nblocks = 0
+avail = 
+Bin 118
+nblocks = 0
+avail = 
+Bin 119
+nblocks = 0
+avail = 
+Bin 120
+nblocks = 0
+avail = 
+Bin 121
+nblocks = 0
+avail = 
+Bin 122
+nblocks = 0
+avail = 
+Bin 123
+nblocks = 0
+avail = 
+Bin 124
+nblocks = 0
+avail = 
+Bin 125
+nblocks = 0
+avail = 
+Bin 126
+nblocks = 0
+avail = 
+Bin 127
+nblocks = 0
+avail = 
+
+Created thread 1.
+Done.
+=====================================
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                   ]0;surya@surya-HP-Pavilion-Power-Laptop-15-cb0xx:~/Desktop/CS6570/sse/challenges/ptmalloc2[0m[27m[24m[J
+[38;5;135msurya[39m at [38;5;166msurya-HP-Pavilion-Power-Laptop-15-cb0xx[39m in [38;5;118m~/Desktop/CS6570/sse/challenges/ptmalloc2[39m ([38;5;81mmaster[38;5;166m●[38;5;161m●[39m[39m)
+$ [K[?1h=[?2004h[?2004l
+
+Script done on Wednesday 02 October 2019 10:32:14 PM IST
